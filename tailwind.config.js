@@ -19,7 +19,7 @@ export default {
       'md': '750px',
       // => @media (min-width: 750px) { ... }
 
-      'lg': '1024px',
+      'lg': '1000px',
       // => @media (min-width: 1024px) { ... }
 
       'xl': '1280px',
