@@ -10,8 +10,8 @@ const Home = () => {
 return (
   <Layout >
     <section className='max-w-[900px] py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
-      <div className='flex flex-col  gap-2 items-center w-[255px]'>
-        <div className='w-[250px] h-[250px] dark:border-white border-cyan-500  border-[3px] rounded-full'  ><ImageCircle image={foto} alt={"my photo"} size={'100%'} key={'myfoto'}/></div>
+      <div className='flex flex-col  gap-2 items-center w-[255px] '>
+        <div className='w-auto h-auto dark:border-white border-cyan-500  border-[3px] rounded-full '  ><ImageCircle image={foto} alt={"my photo"} size={'250px'} key={'myfoto'}/></div>
       
       <h1 className='text-[2.3rem] font-semibold text-center'>Hola soy John Córdova Frontend Developer</h1> 
       </div>
