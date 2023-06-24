@@ -28,7 +28,7 @@ return (
     </section>
    
     <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 dark:bg-gray-800 text-[1.7rem] items-center'>
-      <div className='flex flex-row items-center w-[50%] justify-between'>
+      <div className='flex flex-row items-center ss:w-auto lg:w-[50%] justify-between'>
       <div className='container-cubes'>
           <div className='cube '>
             <div className='cube-face front border-[3px]  border-gray-400 bg-white'></div>
@@ -39,7 +39,7 @@ return (
             <div className='cube-face bottom border-[3px]  border-gray-400 bg-white'></div>
           </div>
         </div>
-        <div className='container-cubes'>
+        <div className='container-cubes ss:w-0 ss:h-0 ss:hidden  lg:w-auto lg:h-auto lg:visible'>
           <div className='cube '>
             <div className='cube-face front border-[3px]  border-gray-400 bg-white'></div>
             <div className='cube-face back border-[3px]  border-gray-400 bg-white'></div>
