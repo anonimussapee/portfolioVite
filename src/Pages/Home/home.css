@@ -33,33 +33,33 @@
 /* Imágenes para cada cara del cubo */
 .cube-face.front {
   transform: translateZ(100px);
-  background-image: url('src/assets/Java-logo.png');
+  background-image: url('../../assets/Java-logo.png');
   
 }
 
 .cube-face.back {
   transform: rotateY(180deg) translateZ(100px);
-  background-image: url('src/assets/js.png');
+  background-image: url('../../assets/js.png');
 }
 
 .cube-face.right {
   transform: rotateY(90deg) translateZ(100px);
-  background-image: url('src/assets/Logo_Google_Analytics.svg.png');
+  background-image: url('../../assets/Logo_Google_Analytics.svg.png');
 }
 
 .cube-face.left {
   transform: rotateY(-90deg) translateZ(100px);
-  background-image: url('src/assets/npm.png');
+  background-image: url('../../assets/npm.png');
 }
 
 .cube-face.top {
   transform: rotateX(90deg) translateZ(100px);
-  background-image: url('src/assets/react.svg');
+  background-image: url('../../assets/react.svg');
 }
 
 .cube-face.bottom {
   transform: rotateX(-90deg) translateZ(100px);
-  background-image: url('src/assets/wpack.png');
+  background-image: url('../../assets/wpack.png');
 }
 
 /* Animación de rotación */
