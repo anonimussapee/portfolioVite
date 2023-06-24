@@ -2,15 +2,15 @@ import { ImageBox } from '../../Components/ImageBox '
 import { ImageCircle } from '../../Components/ImageCircle'
 import { Layout } from '../../Components/Layout'
 import foto from '../../assets/mifoto2.jpg'
-import platzisat from '../../assets/platzisat.jpg'
+import skills from '../../assets/skills.png'
 import {CursorArrowRaysIcon} from '@heroicons/react/24/solid'
 import './home.css'
 
 const Home = () => {
 return (
   <Layout >
-    <section className='max-w-[900px] py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
-      <div className='flex flex-col  gap-2 items-center ss:w-[255px] lg:w-[330px] '>
+    <section className='max-w-[900px] lg:py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
+      <div className='flex flex-col  gap-6 items-center ss:w-[255px] lg:w-[330px] '>
         <div className='w-auto h-auto dark:border-white border-cyan-500  border-[3px] rounded-full '  ><ImageCircle image={foto} alt={"my photo"} size={''} key={'myfoto'} classes={'mifoto'}/></div>
       
       <h1 className='text-[2.3rem] font-semibold text-center'>Hola soy John Córdova Frontend Developer</h1> 
@@ -26,10 +26,34 @@ return (
       </div>
 
     </section>
-    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 dark:bg-gray-800 text-[1.7rem] '>
-      <div className='w-[100%] flex flex-col items-center gap-10'>
-        <h2 className='text-[2.2rem]'>Tengo conocimientos en:</h2>
-        <ul className='flex flex-col lg:flex-wrap gap-4 list-disc text-start w-[80%] h-auto lg:w-[720px] lg:h-[300px]'>
+   
+    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 dark:bg-gray-800 text-[1.7rem] items-center'>
+      <div className='flex flex-row items-center w-[50%] justify-between'>
+      <div className='container-cubes'>
+          <div className='cube '>
+            <div className='cube-face front border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face back border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face right border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face left border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face top border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face bottom border-[3px]  border-gray-400 bg-white'></div>
+          </div>
+        </div>
+        <div className='container-cubes'>
+          <div className='cube '>
+            <div className='cube-face front border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face back border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face right border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face left border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face top border-[3px]  border-gray-400 bg-white'></div>
+            <div className='cube-face bottom border-[3px]  border-gray-400 bg-white'></div>
+          </div>
+        </div>
+      </div>
+       
+      <div className='w-[100%] flex flex-col items-center gap-10 relative '>
+        <h2 className='text-[2.2rem] font-extrabold'>Tengo conocimientos en:</h2>
+        <ul className='flex flex-col lg:flex-wrap gap-4 list-disc text-start w-[80%] h-auto lg:w-[920px] lg:h-[300px] '>
           <li>Html.</li>
           <li>Css.</li>
           <li >JavaScript.</li>
@@ -46,8 +70,11 @@ return (
           <li>Java.</li>
           <li>C.</li>
         </ul>
-
+        
       </div>
+     
+    
+
     </section>
     
   </Layout>
