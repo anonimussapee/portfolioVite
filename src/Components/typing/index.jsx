@@ -4,7 +4,8 @@ import './typing.css';
 const SmsTyping = ({ mensajes }) => {
   const [currentMensajeIndex, setCurrentMensajeIndex] = useState(0);
   const [currentTexto, setCurrentTexto] = useState('');
-  let line = document.querySelector('.line-typing');
+  const [blind, setBlind] =useState(false);
+  let line = 'ontrue';
   useEffect(() => {
     const mensajeActual = mensajes[currentMensajeIndex];
 
@@ -14,9 +15,7 @@ const SmsTyping = ({ mensajes }) => {
       contador++;
 
       if (contador === mensajeActual.length-1) {
-
-    line.classList.add('ontrue');
-       
+        setBlind(true);
         clearInterval(interval);
         setTimeout(() => {
           setCurrentTexto('');
@@ -27,13 +26,13 @@ const SmsTyping = ({ mensajes }) => {
       }
     }, 100); // 100 milisegundos entre cada letra
 
- line.classList.remove('ontrue');
+    setBlind(false);
     return () => clearInterval(interval);
   }, [mensajes, currentMensajeIndex]);
 
   return (
     <div className="mensaje-contenedor w-[90%]">
-      <p className="mensaje-escritura ">{currentTexto}<span className='line-typing '>|</span></p>
+      <p className="mensaje-escritura ">{currentTexto}<span className={`line-typing ${blind && line}`}>|</span></p>
     </div>
   );
 };
