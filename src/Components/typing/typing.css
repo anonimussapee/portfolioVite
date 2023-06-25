@@ -1,0 +1,20 @@
+.line-typing.ontrue{
+ animation:blinding .3s infinite alternate ;
+}
+
+/* Estilos para el texto */
+.mensaje-escritura {
+  
+  word-spacing: 2px;
+}
+
+/* Animación de escritura */
+
+@keyframes blinding {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

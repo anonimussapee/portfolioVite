@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import './NavBar.css'
 import {MoonIcon, SunIcon} from '@heroicons/react/24/solid'
 import { useContext } from 'react'
@@ -12,29 +12,32 @@ const NavBar = () => {
 
   if(contextTheme.themeState=== true){
     document.documentElement.classList.add('dark')
-    themeIconRender = <SunIcon className='w-8 h-7'></SunIcon>;
+    themeIconRender = <SunIcon className='w-10 h-10'></SunIcon>;
   }else{
     document.documentElement.classList.remove('dark')
-    themeIconRender = <MoonIcon className='w-8 h-7'></MoonIcon>;
+    themeIconRender = <MoonIcon className='w-10 h-10'></MoonIcon>;
   }
+  
+
+  const activeClass = 'underline underline-offset-8';
 
   return (
-    <nav className='dark:bg-blue-950 bg-white dark:text-white ss:text-[1.3rem] sm:text-[1.5rem] font-bold'>
+    <nav className='dark:bg-blue-950 bg-white dark:text-white ss:text-[1.3rem] sm:text-[2rem] font-bold '>
       <ul>
-        <Link to='/'>
-        <li className='nav-main--logo'><span className='main-logo img'></span><span className='inline-block'>Home</span></li>
-        </Link>
+        <NavLink to='/' className={({isActive}) => isActive ? activeClass : undefined}>
+        <li className='nav-main--logo'><span className='main-logo img'></span><span className='inline-block'>Inicio</span></li>
+        </NavLink>
       </ul>
-      <ul>
-      <Link to='/'>
+      <ul className='items-center'>
+      <NavLink to='/blog' className={({isActive}) => isActive ? activeClass : undefined}>
         <li>Blog</li>
-        </Link>
-        <Link to='/'>
+        </NavLink>
+        <NavLink to='/proyectos' className={({isActive}) => isActive ? activeClass : undefined}>
         <li>Proyectos</li>
-        </Link>
-        <Link to='/'>
+        </NavLink>
+        <NavLink to='/contact' className={({isActive}) => isActive ? activeClass : undefined}>
         <li>Contactame</li>
-        </Link>
+        </NavLink>
         <li onClick={()=>{
           
           contextTheme.setThemeState(!contextTheme.themeState)

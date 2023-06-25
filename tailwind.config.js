@@ -19,6 +19,9 @@ export default {
       'md': '750px',
       // => @media (min-width: 750px) { ... }
 
+      'lgmax':{'max': '1000px'},
+      // => @media (min-width: 1024px) { ... }
+
       'lg': '1000px',
       // => @media (min-width: 1024px) { ... }
 
