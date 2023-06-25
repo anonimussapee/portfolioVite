@@ -8,7 +8,7 @@ import { SmsTyping } from '../../Components/typing'
 const Home = () => {
 
 // typing
-const smss = [' Soy Ecuatoriano y estoy muy motivado para empezar a trabajar en tu Empresa ',' Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', ' Contactame para realizar los proyectos que tienes en mente'];
+const smss = ['  Soy Ecuatoriano y estoy muy motivado para empezar a trabajar en tu Empresa ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar los proyectos que tienes en mente '];
 // end typing
 
 return (
@@ -80,7 +80,7 @@ return (
 
     </section>
   
-    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 text-[1.9rem] items-center' >
+    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 text-[2rem] font-extrabold items-center' >
     <SmsTyping mensajes={smss}/>
 
     </section>

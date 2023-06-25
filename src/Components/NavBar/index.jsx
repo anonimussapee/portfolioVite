@@ -22,13 +22,13 @@ const NavBar = () => {
   const activeClass = 'underline underline-offset-8';
 
   return (
-    <nav className='dark:bg-blue-950 bg-white dark:text-white ss:text-[1.3rem] sm:text-[2rem] font-bold '>
+    <nav className='dark:bg-blue-950 bg-white dark:text-white ss:text-[1.3rem] sm:text-[1.8rem] font-bold '>
       <ul>
         <NavLink to='/' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='nav-main--logo'><span className='main-logo img'></span><span className='inline-block'>Inicio</span></li>
         </NavLink>
       </ul>
-      <ul className='items-center'>
+      <ul className='flex flex-row items-center sm:gap-6'>
       <NavLink to='/blog' className={({isActive}) => isActive ? activeClass : undefined}>
         <li>Blog</li>
         </NavLink>
