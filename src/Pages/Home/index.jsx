@@ -3,17 +3,19 @@ import { Layout } from '../../Components/Layout'
 import foto from '../../assets/mifoto2.jpg'
 import {CursorArrowRaysIcon} from '@heroicons/react/24/solid'
 import './home.css'
-import { SmsTyping } from '../../Components/typing'
+import { SmsTyping } from '../../Components/Typing'
+import { ContactForm } from '../../Components/ContactForm'
 
 const Home = () => {
 
 // typing
-const smss = ['  Soy Ecuatoriano y estoy muy motivado para empezar a trabajar en tu Empresa ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar los proyectos que tienes en mente '];
+const smss = ['  Soy Ecuatoriano y estoy motivado para empezar a trabajar en tu Empresa ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar proyectos que tengas en mente ']
 // end typing
 
 return (
-  <Layout >
-    <section className='max-w-[900px] lg:py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
+  <>
+    <Layout >
+    <section className='max-w-[900px] pb-20 lg:py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
       <div className='flex flex-col  gap-6 items-center ss:w-[255px] lg:w-[330px] '>
         <div className='w-auto h-auto dark:border-white border-cyan-500  border-[3px] rounded-full '  ><ImageCircle image={foto} alt={'my photo'} size={''} key={'myfoto'} classes={'mifoto'}/></div>
       
@@ -80,11 +82,16 @@ return (
 
     </section>
   
-    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 text-[2rem] font-extrabold items-center' >
-    <SmsTyping mensajes={smss}/>
+    <section className='sms-bg flex flex-col w-[100%] h-[460px] text-center p-[20px] text-[2.5rem] text-white font-extrabold justify-center items-center' >
+      <SmsTyping mensajes={smss}/>
+    </section>
 
+    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 text-[2.5rem] dark:bg-gray-800 font-extrabold justify-center items-center' >
+      <ContactForm/>
     </section>
   </Layout>
+  </>
+  
 )
 }
 

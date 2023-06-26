@@ -4,6 +4,7 @@ import { Home } from '../Home'
 import { NotFound } from '../NotFound'
 import { NavBar } from '../../Components/NavBar'
 import { ContextThemeProvider } from '../../Components/Context/themes'
+import { Footer } from '../Footer'
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -22,7 +23,8 @@ function App() {
    <BrowserRouter>
    <ContextThemeProvider>
     <AppRoutes/>
-   <NavBar/>
+    <NavBar/>
+    <Footer/>
    </ContextThemeProvider>
    </BrowserRouter>
    
