@@ -1,49 +1,79 @@
-import { useState } from 'react';
+import { useState } from 'react'
+import { Navigate } from 'react-router-dom';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
+  const [popup, setPopup] = useState(false);
+  const [sendOk, setSendOk] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
-    console.log('Formulario enviado');
-    // También puedes reiniciar los campos del formulario
-    setName('');
-    setEmail('');
-    setDescription('');
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/jdxevs@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'customer-name': name,
+          'customer-email': email,
+          'customer-description': description
+        })
+      });
+
+      if (response.ok) {
+        setName('');
+        setEmail('');
+        setDescription('');
+        setSendOk(true);
+      } else {
+        alert('Error al enviar el correo');
+      }
+    } catch (error) {
+      alert('Error al enviar el correo');
+    }
   };
 
   return (
     <div className="min-w-[320px] max-w-[450px]">
-      <h2 className=' block font-bold mb-2 text-[2.5rem]'>Dejame tus datos y me pondré en contacto contigo</h2>
-      <form onSubmit={handleSubmit} className="px-8 pt-6 pb-8 mb-8 dark:text-white text-[1.8rem]">
-        
+      {sendOk && <Navigate to='/thanks' replace={true}/>}
+      <h2 className="block font-bold mb-2 text-[2.5rem]">
+        Dejame tus datos y me pondré en contacto contigo
+      </h2>
+      <form
+        onSubmit={handleSubmit}
+        className="px-8 pt-6 pb-8 mb-8 dark:text-white text-[1.8rem]"
+      >
         <div className="mb-8">
           <label className="block font-bold mb-2" htmlFor="name">
             Nombre
           </label>
           <input
-            className=" text-black shadow appearance-none border rounded-xl w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="text-black shadow appearance-none border rounded-xl w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
             id="name"
+            name="customer-name"
             placeholder="Nombre"
             value={name}
             onChange={(event) => setName(event.target.value)}
             required
           />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://jdx.netlify.app/thanks" />
         </div>
         <div className="mb-8">
           <label className="block font-bold mb-2" htmlFor="email">
             Email
           </label>
           <input
-            className=" text-black shadow appearance-none border rounded-xl w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="text-black shadow appearance-none border rounded-xl w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             type="email"
             id="email"
             placeholder="Correo electrónico"
             value={email}
+            name="customer-email"
             onChange={(event) => setEmail(event.target.value)}
             required
           />
@@ -53,9 +83,10 @@ const ContactForm = () => {
             Descripción del proyecto
           </label>
           <textarea
-            className=" text-black shadow appearance-none border rounded-xl w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="text-black shadow appearance-none border rounded-xl w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             id="description"
             placeholder="Descripción"
+            name="customer-description"
             value={description}
             onChange={(event) => setDescription(event.target.value)}
             required
@@ -70,8 +101,10 @@ const ContactForm = () => {
           </button>
         </div>
       </form>
-    </div>
-  );
-}
 
-export {ContactForm};
+    </div>
+
+  );
+};
+
+export {ContactForm}
