@@ -5,13 +5,12 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
-  const [popup, setPopup] = useState(false);
   const [sendOk, setSendOk] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('https://formsubmit.co/ajax/jdxevs@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/bcd6653f8366231ebfd976a66791aefe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
