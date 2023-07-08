@@ -22,7 +22,7 @@ const NavBar = () => {
   const activeClass = 'underline underline-offset-8';
 
   return (
-    <nav className='dark:bg-blue-950 bg-white dark:text-white ss:text-[1.3rem] sm:text-[1.8rem] font-bold '>
+    <nav className='dark:bg-blue-950 bg-white dark:text-white ss:text-[1.3rem] sm:text-[1.8rem] font-bold z-20'>
       <ul>
         <NavLink to='/' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='nav-main--logo'><span className='main-logo img'></span><span className='inline-block'>Inicio</span></li>

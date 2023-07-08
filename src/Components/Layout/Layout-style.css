@@ -5,3 +5,19 @@
   height: 100%;
   padding: 30px 0 0 0;
 }
+
+.react-bg h1{
+  z-index: 1;
+}
+.react-bg::before{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 5px;
+  background-image: url(../../assets/react.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  animation: spinAndBrightness 10s infinite linear;
+}

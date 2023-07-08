@@ -1,5 +1,4 @@
 import { ImageCircle } from '../../Components/ImageCircle'
-import { Layout } from '../../Components/Layout'
 import foto from '../../assets/mifoto2.jpg'
 import {CursorArrowRaysIcon} from '@heroicons/react/24/solid'
 import './home.css'
@@ -14,8 +13,8 @@ const smss = ['  Soy Ecuatoriano y estoy motivado para empezar a trabajar en tu 
 
 return (
   <>
-    <Layout >
-    <section className='max-w-[900px] pb-20 lg:py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
+    
+    <section className='w-[100%] max-w-[900px] pb-20 lg:py-20 my-auto flex gap-8 items-center ss:flex-col lg:flex-row lg:gap-10'>
       <div className='flex flex-col  gap-6 items-center ss:w-[255px] lg:w-[330px] '>
         <div className='w-auto h-auto dark:border-white border-cyan-500  border-[3px] rounded-full '  ><ImageCircle image={foto} alt={'my photo'} size={''} key={'myfoto'} classes={'mifoto'}/></div>
       
@@ -89,7 +88,6 @@ return (
     <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 text-[2.5rem] dark:bg-gray-800 font-extrabold justify-center items-center' >
       <ContactForm/>
     </section>
-  </Layout>
   </>
   
 )
