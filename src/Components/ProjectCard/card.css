@@ -1,4 +1,8 @@
-.iframe-size{
-  background-color: white;
-  
+.card-project{
+  box-shadow: rgb(0, 0, 0) 5px 5px 10px 2px;
+  /* box-shadow: white 0px 3px 10px; */
+}
+.dark .card-project{
+  box-shadow: rgb(127, 126, 126)  3px 5px 5px 0px;
+  /* box-shadow: white 0px 3px 10px; */
 }

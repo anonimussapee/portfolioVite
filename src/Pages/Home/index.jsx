@@ -4,6 +4,7 @@ import {CursorArrowRaysIcon} from '@heroicons/react/24/solid'
 import './home.css'
 import { SmsTyping } from '../../Components/Typing'
 import { ContactForm } from '../../Components/ContactForm'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -74,7 +75,9 @@ return (
           <li>Java.</li>
           <li>C.</li>
         </ul>
-        
+        <Link to='/projects'>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline'>Mirar proyectos</button>
+        </Link>
       </div>
      
     

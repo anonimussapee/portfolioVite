@@ -8,7 +8,7 @@ const Thanks = () => {
       </h1>
       <p className='text-[2rem]'>mientras te invito a observar mis proyectos personales</p>
       <Link to='/projects'>
-        <button  className='text-[2rem] bg-gray-500 dark:bg-blue-950 py-2 px-5 rounded-lg'>Mirar Proyectos</button>
+        <button  className='bg-blue-500 text-[2.2rem] hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline'>Mirar Proyectos</button>
       </Link>
     </div>
   )
