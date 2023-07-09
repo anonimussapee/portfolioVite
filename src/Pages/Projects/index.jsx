@@ -10,7 +10,7 @@ import shopiLab from '../../assets/projShopilab.png'
 const Projects = () => {
   return (
     <section className=' w-[90%] max-w-[600px] h-auto text-[2.3rem] flex flex-col justify-end items-center gap-20 pb-16 '>
-      <h1 className='font-extrabold'>
+      <h1 className='font-extrabold' >
        Estos son mis Proyectos
       </h1>
       <ProjectCard img={todos}

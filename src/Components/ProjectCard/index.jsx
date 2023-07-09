@@ -1,7 +1,9 @@
 import { CursorArrowRaysIcon } from '@heroicons/react/24/solid'
 import './card.css'
+import { useState } from 'react'
 
 const ProjectCard = (props) =>{
+  const [click, setClick] = useState(false);
   return (
     <div className=' flex flex-col justify-center items-center gap-10'>
       <img src={props.img} alt={props.title} className='card-project w-[100%] min-w-[288px] max-w-[450px]  rounded-xl '/>
@@ -9,7 +11,7 @@ const ProjectCard = (props) =>{
         <h2 className='font-bold text-center'>{props.title}</h2>
         <p className='text-[2rem]'>{props.description}</p>
         <details className='text-[2rem]'>
-          <summary>Desarrollado con:<CursorArrowRaysIcon className='w-10 h-10 inline'/></summary>
+          <summary className='relative w-[200px]' onClick={()=>setClick(true)}>Desarrollado con:{!click &&<CursorArrowRaysIcon className='clickme  inline ' />}</summary>
           {props.detail}
 
         </details>
