@@ -4,7 +4,7 @@ import storemlo from '../../assets/projAcademlo.png'
 import appWeather from '../../assets/projWeather.png'
 import viteEc from '../../assets/viteEcommerce.png'
 import shopiLab from '../../assets/projShopilab.png'
-
+import projmp3 from '../../assets/projmp3.png'
 
 
 const Projects = () => {
@@ -13,6 +13,20 @@ const Projects = () => {
       <h1 className='font-extrabold' >
        Estos son mis Proyectos
       </h1>
+      <ProjectCard img={projmp3}
+        title='YouMp3'
+        description='Esta app te permite descargar música totalmente gratis te invito a pobrarla! ,  la construi consumiendo una API ademas use la libreria de React. contiene loadings creados con css.  '
+        detail={<ul>
+        <li>Vite.Js</li>
+        <li>TailwindCss</li>
+        <li>Librería React.Js</li>
+        <li>JavaScript 85.5%</li>
+        <li>Html 4.4%</li>
+        <li>Css 10.1%</li>
+        <li><a href="https://github.com/anonimussapee/yoump3" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
+        </ul>}
+        link='https://ymp3.netlify.app/'
+      />
       <ProjectCard img={todos}
        title='App Todos'
        description='Esta app te servira para tener tu lista de cosas por hacer en un solo lugar, solo ingresa a la app  creas un "Todo" y asi manten el orden en tu agenda. primer proyecto con React ademas hize uso de useContext, useState, useEffect, LocalStorage y realize los loading skeletons para simular el proceso de consumo de una Api.'
@@ -82,7 +96,6 @@ const Projects = () => {
         </ul>}
          link='https://shopilab.netlify.app/'
       />
-
      
     </section>
   )
