@@ -5,6 +5,8 @@ import appWeather from '../../assets/projWeather.png'
 import viteEc from '../../assets/viteEcommerce.png'
 import shopiLab from '../../assets/projShopilab.png'
 import projmp3 from '../../assets/projmp3.png'
+import projEstado from '../../assets/projEstado.png'
+
 
 
 const Projects = () => {
@@ -96,7 +98,21 @@ const Projects = () => {
         </ul>}
          link='https://shopilab.netlify.app/'
       />
-     
+
+      <ProjectCard img={projEstado}
+        title='Manejo profesional del estado'
+        description='Esta app demuestra el conocimiento adquirido en el manejo profesional del estado, lo mas interesante esta en el código te invito a visitar mi github el enlace esta aquí abajo. Los codigos de seguridad son: useState - classState - useReducer.'
+        detail={<ul>
+        <li>Vite.Js</li>
+        <li>TailwindCss</li>
+        <li>Librería React.Js</li>
+        <li>JavaScript 97.1%</li>
+        <li>Html 2.2%</li>
+        <li>Css 0.7%</li>
+        <li><a href="https://github.com/anonimussapee/manejo-estado" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
+        </ul>}
+        link='https://statehandling.netlify.app/'
+      />
     </section>
   )
 }
