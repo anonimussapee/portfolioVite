@@ -28,7 +28,7 @@ return (
         <p>
           Ademas adquirí mucho conocimiento en diferentes areas de programación desde el día que conocí la plataforma.
         </p>
-        <p>Hoy en día me encuentro en el <strong>desarrollo de un proyecto personal</strong> para conectarme a un satélite que se encuentra en órbita en este momento el <strong className='relative'><a href='#platzisat'>PlatziSat-1 </a><CursorArrowRaysIcon className=' inline clickme'/></strong></p>
+        <p>Hoy en día me encuentro en el <strong>desarrollo de un proyecto personal</strong> para conectarme a un satélite que se encuentra en órbita en este momento el <strong className='relative'><Link to='/satelite'>PlatziSat-1 </Link><CursorArrowRaysIcon className=' inline clickme'/></strong></p>
       </div>
     </section>
    

@@ -8,6 +8,7 @@ import { Footer } from '../Footer'
 import { Layout } from '../../Components/Layout'
 import { Thanks } from '../Thanks'
 import { Projects } from '../Projects'
+import { Satelite } from '../Satelite'
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -17,7 +18,7 @@ const AppRoutes = () => {
     {path:'/thanks', element : <Thanks/> },
     {path:'/proyectos', element : <Projects/> },
     {path:'/projects', element : <Projects/> },
-
+    {path:'/satelite', element : <Satelite/> },
   ])
   return routes 
 }
