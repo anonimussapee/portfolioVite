@@ -4,6 +4,7 @@ import {Bars3Icon, MoonIcon, SunIcon} from '@heroicons/react/24/solid'
 import { useContext, useState } from 'react'
 import { ContextTheme } from '../Context/themes'
 import { SlideNabvar } from '../SlideNavbar'
+import { scrollToIndex } from '../ScrollToIndex'
 
 const NavBar = () => {
 
@@ -27,18 +28,18 @@ const NavBar = () => {
     <>
     <nav className='dark:bg-blue-950 bg-white dark:text-white  text-[1.8rem] font-bold z-20 '>
       <ul>
-        <NavLink to='/' className={({isActive}) => isActive ? activeClass : undefined}>
+        <NavLink onClick={scrollToIndex} to='/' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='nav-main--logo '><span className='main-logo img'></span><span className='inline-block'>Inicio</span></li>
         </NavLink>
       </ul>
       <ul className='flex flex-row items-center sm:gap-6'>
-      <NavLink to='/blog' className={({isActive}) => isActive ? activeClass : undefined}>
+      <NavLink onClick={scrollToIndex} to='/blog' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='smMax:hidden smMax:w-0 smMax:h-0'>Cursos</li>
         </NavLink>
-        <NavLink to='/proyectos' className={({isActive}) => isActive ? activeClass : undefined}>
+        <NavLink onClick={scrollToIndex} to='/proyectos' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='smMax:hidden smMax:w-0 smMax:h-0'>Proyectos</li>
         </NavLink>
-        <NavLink to='/contact' className={({isActive}) => isActive ? activeClass : undefined}>
+        <NavLink onClick={scrollToIndex} to='/contact' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='smMax:hidden smMax:w-0 smMax:h-0'>Contactame</li>
         </NavLink>
         <li onClick={()=>{
@@ -59,10 +60,8 @@ const NavBar = () => {
       <SlideNabvar/>
     }
     </>
-  );10
-  10
-  10
-  10
+  );
+ 
 
 }
 

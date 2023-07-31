@@ -11,6 +11,7 @@ import browser from '../../assets/browser.png'
 const Satelite = () => {
   return (
     <section className=' w-[90%] min-w-[280px] max-w-[800px] flex flex-col gap-5 justify-center items-center mb-10'>
+      
       <ImageDiv image={sat} height={'300px'} width={'100%'} key={'satOne'}/>
       <h1 className='text-[2.2rem] font-bold'>Desafío Espacial: Construyendo una Estación Terrestre</h1>
       <p className='text-[1.8rem]'>

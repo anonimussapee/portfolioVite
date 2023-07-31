@@ -5,9 +5,10 @@ import './home.css'
 import { SmsTyping } from '../../Components/Typing'
 import { ContactForm } from '../../Components/ContactForm'
 import { Link } from 'react-router-dom'
+import { scrollToIndex } from '../../Components/ScrollToIndex'
 
 const Home = () => {
-
+ 
 // typing
 const smss = ['  Soy Ecuatoriano y estoy motivado para empezar a trabajar en tu Empresa ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar proyectos que tengas en mente ']
 // end typing
@@ -28,7 +29,10 @@ return (
         <p>
           Ademas adquirí mucho conocimiento en diferentes areas de programación desde el día que conocí la plataforma.
         </p>
-        <p>Hoy en día me encuentro en el <strong>desarrollo de un proyecto personal</strong> para conectarme a un satélite que se encuentra en órbita en este momento el <strong className='relative'><Link to='/satelite'>PlatziSat-1 </Link><CursorArrowRaysIcon className=' inline clickme'/></strong></p>
+        <p>Hoy en día me encuentro en el <strong>desarrollo de un proyecto personal</strong> para conectarme a un satélite que se encuentra en órbita en este momento el <strong className='relative'><Link to='/satelite' onClick={scrollToIndex}>PlatziSat-1 </Link></strong></p>
+        <Link to='/satelite' onClick={scrollToIndex}>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline relative'>Mirar elaboracion de la estación terrestre<CursorArrowRaysIcon className=' inline clickme'/> </button>
+        </Link>
       </div>
     </section>
    
@@ -75,7 +79,7 @@ return (
           <li>Java.</li>
           <li>C.</li>
         </ul>
-        <Link to='/projects'>
+        <Link to='/projects' onClick={scrollToIndex}>
         <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline'>Mirar proyectos</button>
         </Link>
       </div>
