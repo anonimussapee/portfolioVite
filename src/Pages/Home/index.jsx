@@ -31,7 +31,7 @@ return (
         </p>
         <p>Hoy en día me encuentro en el <strong>desarrollo de un proyecto personal</strong> para conectarme a un satélite que se encuentra en órbita en este momento el <strong className='relative'><Link to='/satelite' onClick={scrollToIndex}>PlatziSat-1 </Link></strong></p>
         <Link to='/satelite' onClick={scrollToIndex}>
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline relative'>Mirar elaboracion de la estación terrestre<CursorArrowRaysIcon className=' inline clickme'/> </button>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline relative'>Mirar elaboracion de la estación terrestre<CursorArrowRaysIcon className='dark:text-white text-black inline clickme'/> </button>
         </Link>
       </div>
     </section>
