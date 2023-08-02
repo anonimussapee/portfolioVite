@@ -6,7 +6,7 @@ import viteEc from '../../assets/viteEcommerce.png'
 import shopiLab from '../../assets/projShopilab.png'
 import projmp3 from '../../assets/projmp3.png'
 import projEstado from '../../assets/projEstado.png'
-
+import fmentorCards from '../../assets/fmentorCard.png'
 
 
 const Projects = () => {
@@ -15,6 +15,20 @@ const Projects = () => {
       <h1 className='font-extrabold' >
        Estos son mis Proyectos
       </h1>
+      <ProjectCard img={fmentorCards}
+        title='Frontend Mentor Challenges'
+        description='Esta app es un desafio de frontend mentor el cual tiene dos vistas una versión para Movil y otra versión para Desktop, estos retos mejoran mi manera de maquetar paginas web y tener mas experiencia en esos ambitos.'
+        detail={<ul>
+        <li>Vite.Js</li>
+        <li>TailwindCss</li>
+        <li>Librería React.Js</li>
+        <li>JavaScript 74.4%</li>
+        <li>Html 4.9%</li>
+        <li>Css 20.7%</li>
+        <li><a href="https://github.com/anonimussapee/f-mentors" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
+        </ul>}
+        link='https://fmentor.netlify.app/'
+      />
       <ProjectCard img={projmp3}
         title='YouMp3'
         description='Esta app te permite descargar música totalmente gratis te invito a pobrarla! ,  la construi consumiendo una API ademas use la libreria de React. contiene loadings creados con css.  '
