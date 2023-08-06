@@ -7,6 +7,7 @@ import shopiLab from '../../assets/projShopilab.png'
 import projmp3 from '../../assets/projmp3.png'
 import projEstado from '../../assets/projEstado.png'
 import fmentorCards from '../../assets/fmentorCard.png'
+import newsletter from '../../assets/nlet.png'
 
 
 const Projects = () => {
@@ -15,6 +16,20 @@ const Projects = () => {
       <h1 className='font-extrabold' >
        Estos son mis Proyectos
       </h1>
+      <ProjectCard img={newsletter}
+        title='NewsLetter Challenge'
+        description='Esta app es un desafio de frontend mentor el cual tiene dos vistas una versión para Movil y otra versión para Desktop, este reto trata sobre el frontend para permitir a usuarios subscribirse a un boletín informativo. '
+        detail={<ul>
+        <li>Vite.Js</li>
+        <li>TailwindCss</li>
+        <li>Librería React.Js</li>
+        <li>JavaScript 77.8%</li>
+        <li>Html 6.3%</li>
+        <li>Css 15.9%</li>
+        <li><a href="https://github.com/anonimussapee/newslet" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
+        </ul>}
+        link='https://nlet.netlify.app/'
+      />
       <ProjectCard img={fmentorCards}
         title='Frontend Mentor Challenges'
         description='Esta app es un desafio de frontend mentor el cual tiene dos vistas una versión para Movil y otra versión para Desktop, estos retos mejoran mi manera de maquetar paginas web y tener mas experiencia en esos ambitos.'
