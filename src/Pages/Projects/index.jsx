@@ -8,6 +8,9 @@ import projmp3 from '../../assets/projmp3.png'
 import projEstado from '../../assets/projEstado.png'
 import fmentorCards from '../../assets/fmentorCard.png'
 import newsletter from '../../assets/nlet.png'
+import multistep from '../../assets/multistep.png'
+
+
 
 
 const Projects = () => {
@@ -16,6 +19,20 @@ const Projects = () => {
       <h1 className='font-extrabold' >
        Estos son mis Proyectos
       </h1>
+      <ProjectCard img={multistep}
+        title='multistep Challenge'
+        description='Esta es una solución al desafío del formulario de varios pasos en Frontend Mentor.'
+        detail={<ul>
+        <li>Vite.Js</li>
+        <li>TailwindCss</li>
+        <li>Librería React.Js</li>
+        <li>JavaScript 87.6%</li>
+        <li>Html 1.5%</li>
+        <li>Css 10.9%</li>
+        <li><a href="https://github.com/anonimussapee/multistep" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
+        </ul>}
+        link='https://mstep.netlify.app/'
+      />
       <ProjectCard img={newsletter}
         title='NewsLetter Challenge'
         description='Esta app es un desafio de frontend mentor el cual tiene dos vistas una versión para Movil y otra versión para Desktop, este reto trata sobre el frontend para permitir a usuarios subscribirse a un boletín informativo. '
