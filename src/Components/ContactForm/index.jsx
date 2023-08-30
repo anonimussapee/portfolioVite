@@ -38,7 +38,7 @@ const ContactForm = () => {
   return (
     <div className="min-w-[320px] max-w-[450px]">
       {sendOk && <Navigate to='/thanks' replace={true}/>}
-      <h2 className="block font-bold mb-2 text-[2.5rem]">
+      <h2 className="block font-bold mb-2 text-[2.2rem]">
         Dejame tus datos y me pondré en contacto contigo
       </h2>
       <form

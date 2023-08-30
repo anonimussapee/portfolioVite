@@ -15,10 +15,22 @@ import multistep from '../../assets/multistep.png'
 
 const Projects = () => {
   return (
-    <section className=' w-[90%] max-w-[600px] h-auto text-[2.3rem] flex flex-col justify-end items-center gap-20 pb-16 '>
-      <h1 className='font-extrabold' >
+    <section className=' w-[90%] max-w-[600px] h-auto text-[2rem] flex flex-col justify-end items-center gap-20 pb-16 '>
+      <h1 className='font-extrabold text-[2.3rem]' >
        Estos son mis Proyectos
       </h1>
+      <ProjectCard img={todos}
+       title='App Todos'
+       description='Esta app te servira para tener tu lista de cosas por hacer en un solo lugar, solo ingresa a la app  creas un "Todo" y asi manten el orden en tu agenda. primer proyecto con React y react-beautiful-dnd.'
+       detail={<ul>
+        <li>Librería React.Js</li>
+        <li>JavaScript 88.8%</li>
+        <li>Html 1.7%</li>
+        <li>Css 16.5%</li>
+        <li><a href="https://github.com/anonimussapee/fdo" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
+       </ul>}
+        link='https://dnd-todo-app.netlify.app/'
+        />
       <ProjectCard img={multistep}
         title='multistep Challenge'
         description='Esta es una solución al desafío del formulario de varios pasos en Frontend Mentor.'
@@ -35,7 +47,7 @@ const Projects = () => {
       />
       <ProjectCard img={newsletter}
         title='NewsLetter Challenge'
-        description='Esta app es un desafio de frontend mentor el cual tiene dos vistas una versión para Movil y otra versión para Desktop, este reto trata sobre el frontend para permitir a usuarios subscribirse a un boletín informativo. '
+        description='Esta app es un desafio de frontend mentor un boletín informativo responsivo.'
         detail={<ul>
         <li>Vite.Js</li>
         <li>TailwindCss</li>
@@ -48,8 +60,8 @@ const Projects = () => {
         link='https://nlet.netlify.app/'
       />
       <ProjectCard img={fmentorCards}
-        title='Frontend Mentor Challenges'
-        description='Esta app es un desafio de frontend mentor el cual tiene dos vistas una versión para Movil y otra versión para Desktop, estos retos mejoran mi manera de maquetar paginas web y tener mas experiencia en esos ambitos.'
+        title='Bank card challenge'
+        description='Esta app es un desafio de frontend mentor una tarjeta de credito virtual y responsivo.'
         detail={<ul>
         <li>Vite.Js</li>
         <li>TailwindCss</li>
@@ -63,7 +75,7 @@ const Projects = () => {
       />
       <ProjectCard img={projmp3}
         title='YouMp3'
-        description='Esta app te permite descargar música totalmente gratis te invito a pobrarla! ,  la construi consumiendo una API ademas use la libreria de React. contiene loadings creados con css.  '
+        description='Esta app te permite descargar música totalmente gratis te invito a pobrarla!, la construi consumiendo una API ademas use la libreria de React. contiene loadings creados con css.  '
         detail={<ul>
         <li>Vite.Js</li>
         <li>TailwindCss</li>
@@ -75,18 +87,6 @@ const Projects = () => {
         </ul>}
         link='https://ymp3.netlify.app/'
       />
-      <ProjectCard img={todos}
-       title='App Todos'
-       description='Esta app te servira para tener tu lista de cosas por hacer en un solo lugar, solo ingresa a la app  creas un "Todo" y asi manten el orden en tu agenda. primer proyecto con React ademas hize uso de useContext, useState, useEffect, LocalStorage y realize los loading skeletons para simular el proceso de consumo de una Api.'
-       detail={<ul>
-        <li>Librería React.Js</li>
-        <li>JavaScript 59.2%</li>
-        <li>Html 4.5%</li>
-        <li>Css 36.3%</li>
-        <li><a href="https://github.com/anonimussapee/todos/tree/main" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
-       </ul>}
-        link='https://anonimussapee.github.io/todos/'
-        />
 
       <ProjectCard img={storemlo}
        title='Storemlo'
@@ -115,20 +115,6 @@ const Projects = () => {
         </ul>}
          link='https://punlla.netlify.app/'
          />
-      <ProjectCard img={viteEc}
-        title='ViteEcommerce'
-        description='Esta app simula el proceso de compra en un Ecommerce la navegacion con App Router Dom y el manejo del estado, ademas con este proyecto aprendi como puedo hacer enlaces dinámicos para mostrar productos, cosa que en ese entonces se me hacia desconocido, pero siempre buscaba en internet como conseguir ese objetivo.'
-        detail={<ul>
-         <li>Vite.Js</li>
-         <li>TailwindCss</li>
-         <li>Librería React.Js</li>
-         <li>JavaScript 77.9%</li>
-         <li>Html 3.3%</li>
-         <li>Css 18.8%</li>
-         <li><a href="https://github.com/anonimussapee/vite/tree/main" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
-        </ul>}
-         link='https://viteplatzi.netlify.app/'
-      />
 
       <ProjectCard img={shopiLab}
         title='ShopiLab'
@@ -145,20 +131,6 @@ const Projects = () => {
          link='https://shopilab.netlify.app/'
       />
 
-      <ProjectCard img={projEstado}
-        title='Manejo profesional del estado'
-        description='Esta app demuestra el conocimiento adquirido en el manejo profesional del estado, lo mas interesante esta en el código te invito a visitar mi github el enlace esta aquí abajo. Los codigos de seguridad son: useState - classState - useReducer.'
-        detail={<ul>
-        <li>Vite.Js</li>
-        <li>TailwindCss</li>
-        <li>Librería React.Js</li>
-        <li>JavaScript 97.1%</li>
-        <li>Html 2.2%</li>
-        <li>Css 0.7%</li>
-        <li><a href="https://github.com/anonimussapee/manejo-estado" target='_blank' className='text-blue-500 dark:text-[#1cff1c] underline underline-offset-8'>Ver en github</a></li>
-        </ul>}
-        link='https://statehandling.netlify.app/'
-      />
     </section>
   )
 }

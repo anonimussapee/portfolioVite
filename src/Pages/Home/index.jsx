@@ -10,7 +10,7 @@ import { scrollToIndex } from '../../Components/ScrollToIndex'
 const Home = () => {
  
 // typing
-const smss = ['  Soy Ecuatoriano y estoy motivado para empezar a trabajar en tu Empresa ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar proyectos que tengas en mente ']
+const smss = ['  Soy Ecuatoriano y estoy motivado para empezar a trabajar ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar proyectos que tengas en mente ']
 // end typing
 
 return (
@@ -22,7 +22,7 @@ return (
       
       <h1 className='w-[320px] text-[2.5rem] font-semibold text-center'>Hola soy John Córdova Frontend Developer</h1> 
       </div>
-      <div className='w-[90%] text-[2rem]  text-center flex flex-col gap-2'>
+      <div className='w-[90%] text-[1.8rem]  text-center flex flex-col gap-2'>
         <p >
           Estudio Desarrollo Web<strong> full stack con JavaScript</strong>  en la Escuela de <strong>Platzi. </strong> 
         </p>
@@ -36,7 +36,7 @@ return (
       </div>
     </section>
    
-    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 dark:bg-gray-800 text-[1.9rem] items-center'>
+    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 dark:bg-gray-800 text-[1.8rem] items-center'>
       <div className='flex flex-row items-center ss:w-auto lg:w-[50%] justify-between'>
       <div className='container-cubes'>
           <div className='cube '>
@@ -92,7 +92,7 @@ return (
       <SmsTyping mensajes={smss}/>
     </section>
 
-    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20 text-[2.5rem] dark:bg-gray-800 font-extrabold justify-center items-center' >
+    <section className=' my-auto flex flex-col gap-10 w-[100%] h-auto text-center py-20  dark:bg-gray-800 font-extrabold justify-center items-center' >
       <ContactForm/>
     </section>
   </>
