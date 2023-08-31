@@ -10,7 +10,7 @@ import { scrollToIndex } from '../../Components/ScrollToIndex'
 const Home = () => {
  
 // typing
-const smss = ['  Soy Ecuatoriano y estoy motivado para empezar a trabajar ','  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar proyectos que tengas en mente ']
+const smss = ['  Como ya viste he aprendido varios lenguajes de programación y voy en camino a ser FULL STACK CON JAVASCRIPT ', '  Contactame para realizar proyectos que tengas en mente ']
 // end typing
 
 return (
