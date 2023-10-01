@@ -43,6 +43,7 @@ const Satelite = () => {
         </div>
 
       </div>
+      <button className='text-[1.8rem] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline relative'>CURSO PROXIMAMENTE DISPONIBLE<CursorArrowRaysIcon className='dark:text-white text-black inline clickme'/> </button>
       <h2 className='text-[2rem] font-bold pt-10 pb-7'>¿Que datos recibe la estacion terrestre?</h2>
       <ol className='list-disc '>
         <li className='text-[1.8rem]'><span className="font-bold">Identificación y Metadatos</span>: <p className="text-[1.6rem]"> Se refiere al nombre o identificación del satélite o dispositivo, cuándo se recibieron, configuración de la comunicación LoRa utilizada,  la velocidad de propagación, el factor de corrección  y el ancho de banda </p></li>
@@ -57,6 +58,7 @@ const Satelite = () => {
         <button className='text-[1.8rem] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline relative'>Observar plataforma web<CursorArrowRaysIcon className='dark:text-white text-black inline clickme'/> </button>
       </a>
           
+
       <h2 className='text-[2rem] font-bold pt-10'>Auspiciador:</h2>
       <div className='flex flex-row smMax:flex-col justify-center items-center gap-3'>
         <a href="https://www.pilahuintio.ec/" target='_blank'>
