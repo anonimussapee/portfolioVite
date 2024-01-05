@@ -41,3 +41,15 @@ nav ul{
 
   }
 }
+.barra-de-navegacion:hover{
+
+  background-color:rgb(23, 37, 84) !important;
+  color: white !important;
+
+}
+.dark .barra-de-navegacion:hover{
+
+  background-color:white !important;
+  color: black !important;
+
+}

@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <>
-    <nav className='dark:bg-blue-950 bg-white dark:text-white  text-[1.7rem] font-bold z-20 '>
+    <nav className='barra-de-navegacion dark:bg-blue-950 bg-white dark:text-white  text-[1.7rem] font-bold z-20 '>
       <ul>
         <NavLink onClick={scrollToIndex} to='/' className={({isActive}) => isActive ? activeClass : undefined}>
         <li className='nav-main--logo '><span className='main-logo img'></span><span className='inline-block'>Inicio</span></li>

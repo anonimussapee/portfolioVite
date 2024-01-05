@@ -9,6 +9,7 @@ import { Layout } from '../../Components/Layout'
 import { Thanks } from '../Thanks'
 import { Projects } from '../Projects'
 import { Satelite } from '../Satelite'
+import { Mecanic } from '../Mecanic'
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -16,6 +17,8 @@ const AppRoutes = () => {
     {path:'/home', element : <Home/> },
     {path:'/*', element : <NotFound/> },
     {path:'/thanks', element : <Thanks/> },
+    {path:'/mecanico', element : <Mecanic/> },
+    {path:'/mecanica', element : <Mecanic/> },
     {path:'/proyectos', element : <Projects/> },
     {path:'/projects', element : <Projects/> },
     {path:'/satelite', element : <Satelite/> },

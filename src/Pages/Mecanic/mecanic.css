@@ -1,0 +1,14 @@
+.caja-de-marcas{
+  animation: deslizar 10s infinite linear;
+  position: relative;
+}
+
+@keyframes deslizar {
+
+  0%{
+    right: -500px;
+  }
+  100%{
+    right: 800px;
+  }
+}
